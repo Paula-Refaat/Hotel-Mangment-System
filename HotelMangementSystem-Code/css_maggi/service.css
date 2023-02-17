@@ -1,0 +1,311 @@
+body{
+    background-color: #f8f9fa;
+}
+* {
+    box-sizing: border-box;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .column3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .joj1{
+    width: 121%;
+    height: 238%;
+    top: 0;
+    border: 1px solid #e00e0e00;
+    border-radius: 4px;
+    margin-top: -21px;
+    float: right;
+    margin-right: -23px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+  .joj2{
+    width: 121%;
+    height: 238%;
+    top: 0;
+    border: 1px solid #e00e0e00;
+    border-radius: 4px;
+    margin-top: -21px;
+    float: right;
+    margin-right: -23px;
+  }
+  .joj3{
+    width: 121%;
+    height: 238%;
+    top: 0;
+    border: 1px solid #e00e0e00;
+    border-radius: 4px;
+    margin-top: -21px;
+    float: right;
+    margin-right: -23px;
+  }
+  .containermm{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.btn0{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 30px;
+    margin-top: -21px;
+    float: right;
+    margin-right: 930px;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 0.5;
+    margin-top: -304px;
+    margin-bottom: 208px;
+}
+.btn0:hover{
+    opacity: 1;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+}
+.ti{
+    width: 100px;
+    margin-top: -22px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: -242px;
+}
+.h22{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.kok{
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px 0;
+    background: #5bc0de;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0, 0,0.2);
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.kok2{
+    background: #5bc0de;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+    margin-right: -268px;
+    margin-left: -29px;
+}
+.container1{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 30px;
+    float: right;
+    margin-right: auto;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-top: -304px;
+    margin-bottom: 208px;
+}
+.btn1:hover{
+    opacity: 1;
+}
+.popup1{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+}
+.ti1{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: -242px;
+}
+.h33{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.loll1{
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0, 0,0.2);
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.loll2{
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+    margin-right: -268px;
+    margin-left: -29px;
+}
+.container2{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.btn2{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 30px;
+    float: right;
+    margin-right: auto;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 0.5;
+    margin-left: 655px;
+    margin-top: -300px;
+    margin-bottom: 203px;
+    margin-right: -99px;
+    
+}
+.btn2:hover{
+    opacity: 1;
+}
+.popup2{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+}
+.ti11{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: -242px;
+}
+.h331{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.loll11{
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px 0;
+    background: #5bc0de;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0, 0,0.2);
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.loll21{
+    background: #5bc0de;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+    margin-right: -268px;
+    margin-left: -29px;
+}

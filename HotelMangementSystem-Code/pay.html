@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css_home/superfish.css">
+	<link rel="stylesheet" href="css_home/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css_home/cs-select.css">
+	<link rel="stylesheet" href="css_home/cs-skin-border.css">
+	<link rel="stylesheet" href="css_home/themify-icons.css">
+	<link rel="stylesheet" href="css_home/flaticon.css">
+	<link rel="stylesheet" href="css_home/icomoon.css">
+	<link rel="stylesheet" href="css_home/flexslider.css">
+	<link rel="stylesheet" href="css_home/style.css">
+    <link rel="stylesheet" href="css_pay/pay.css">
+    <title>Payment page</title>
+</head>
+<body>
+
+	<div id="fh5co-header">
+        <header id="fh5co-header-section">
+            <div class="container">
+                <div class="nav-header">
+                    <a class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                    <h1 id="fh5co-logo"><a>Hotel Management System </a></h1>
+                    <nav id="fh5co-menu-wrap" role="navigation">
+                        <ul class="sf-menu" id="fh5co-primary-menu">
+                            <li><a style=" font-weight: bold;" class="active" href="Home.html">Home</a></li>
+                            <li><a style=" font-weight: bold;" href="service.html">Services</a></li>
+                            <li><a style=" font-weight: bold;" href="checkout.html">Check out</a></li> 
+                            <li><a style=" font-weight: bold;" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <form style="margin-top: 80px; margin-bottom: 80px;" action="action">
+        <h1 style="text-align: center; color: aliceblue;">payment</h1>
+        <label style="padding-left:10px ;" for="name" class="viola2">customer Name:</label> <br>
+        <input  type="text"  id="name"  name="name" placeholder="your name" class="viola1" ><br>   
+
+        <label  style="padding-left:10px ;" for="email" class="viola2">email:</label> <br>
+        <input  type="text"  id="email"  name="email" placeholder="your email" class="viola1" ><br>
+
+        <label   style="padding-left:10px ;" for="card number" class="viola2">card number:</label> <br>
+        <input  type="text"  id="number"  name="number" placeholder="your card number"  class="viola1"><br>  
+
+        <label  style="padding-left:10px ;" for="Room number" class="viola2">Room number:</label> <br>
+        <input  type="text"  id="Room number"  name="Room number" placeholder="your Room number" class="viola1"><br>  
+
+        
+       
+      
+        <div class="A"> 
+            <label  style="padding-left:5px ;" for="cardex" class="viola2">card expiry month:</label> <br>
+            <input  type="month"  id="month"  name="month" placeholder="MMM" class="viola1" ><br>
+        </div>
+
+        <div class="A"> 
+            <label for="cardye" class="viola2"> card expiry year:</label> <br>
+            <input   type="year"  id="year"  name="year" placeholder="yyy" class="viola1" ><br>  
+        </div>
+
+       
+
+        <div  style="display:-webkit-flex;" class="A">
+            <button onclick="myFunction()" style="margin-left: 150px ;" class="viola3" type="button">pay</button> 
+            <br>
+             <a style="text-decoration:none ;"  href="select_rooms.html"> <button class="viola3"  type="button">cancel</button> </a>
+
+       </div>
+       
+    </form>
+
+    <script>
+        function myFunction() {
+          alert("paid successfully!");
+        }
+      </script>
+
+    
+</body>
+</html>

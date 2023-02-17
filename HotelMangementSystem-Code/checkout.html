@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css_home/superfish.css">
+  <link rel="stylesheet" href="css_home/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="css_home/cs-select.css">
+  <link rel="stylesheet" href="css_home/cs-skin-border.css">
+  <link rel="stylesheet" href="css_home/themify-icons.css">
+  <link rel="stylesheet" href="css_home/flaticon.css">
+  <link rel="stylesheet" href="css_home/icomoon.css">
+  <link rel="stylesheet" href="css_home/flexslider.css">
+  <link rel="stylesheet" href="css_home/style.css">
+  <link rel="stylesheet" href="checkout_css/checkout_css.css">
+</head>
+
+<body>
+  <div id="fh5co-header">
+    <header id="fh5co-header-section">
+      <div class="container">
+        <div class="nav-header">
+          <a class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+          <h1 id="fh5co-logo"><a>Hotel Management System </a></h1>
+          <nav id="fh5co-menu-wrap" role="navigation">
+            <ul class="sf-menu" id="fh5co-primary-menu">
+              <li><a style=" font-weight: bold;" class="active" href="Home.html">Home</a></li>
+              <li><a style=" font-weight: bold;" href="service.html">Services</a></li>
+              <li><a style=" font-weight: bold;" href="checkout.html">Check out</a></li>
+              <li><a style=" font-weight: bold;" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+
+  <div class='contcheck'>
+    <div class='window'>
+      <div class='order-info'>
+        <div class='order-info-content'>
+          <h2 class="checkoo">Order Summary</h2>
+          <div class='line'></div>
+          <table class='order-table'>
+            <tbody>
+              <tr>
+                <td><img src='checkout_img/food.jpg' class='full-width'></img>
+                </td>
+                <td>
+                  <br> <span class='thinC'>FOOD</span>
+                  <br>Berger<br> <span class='thinC smallS'>large side with cola<br><br></span>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <div class='price'>$10</div>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+          <div class='line'></div>
+          <table class='order-table'>
+            <tbody>
+              <tr>
+                <td><img src='checkout_img/land.jpg' class='full-width'></img>
+                </td>
+                <td>
+                  <br> <span class='thinC'>laundry</span>
+                  <br>clothes<br> <span class='thinC smallS'>3 Shirts and 2 Bants</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class='price'>$5</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class='line'></div>
+          <div class='total'>
+            <span style='float:left;'>
+              <div class='thinC dense'>VAT 19%</div>
+              <div class='thinC dense'>Delivery</div>
+              TOTAL
+            </span>
+            <span style='float:right; text-align:right;'>
+              <div class='thinC dense'>$4.75</div>
+              <div class='thinC dense'>$4.95</div>
+              $25.55
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='credit-info'>
+        <div class='credit-info-content'>
+          <table class='half-input-table'>
+            <tr>
+              <td>Please select your card: </td>
+              <td>
+                <div class='dropdown' id='card-dropdown'>
+                  <div class='dropdown-btn' id='current-card'>Visa</div>
+                  <div class='dropdown-select'>
+                    <ul>
+                      <li>Master Card</li>
+                      <li>American Express</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80'
+            class='credit-card-image' id='credit-card-image'></img>
+          Card Number
+          <input class='input-field'></input>
+          Card Holder
+          <input class='input-field'></input>
+          <table class='half-input-table'>
+            <tr>
+              <td> Expires
+                <input class='input-field'></input>
+              </td>
+              <td>CVC
+                <input class='input-field'></input>
+              </td>
+            </tr>
+          </table>
+         <a  href="contact.html">  <button onclick="myFunction()" class='pay-btn'>Checkout</button></a> 
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    var cardDrop = document.getElementById('card-dropdown');
+    var activeDropdown;
+    cardDrop.addEventListener('click', function () {
+      var node;
+      for (var i = 0; i < this.childNodes.length - 1; i++)
+        node = this.childNodes[i];
+      if (node.className === 'dropdown-select') {
+        node.classList.add('visible');
+        activeDropdown = node;
+      };
+    })
+
+    window.onclick = function (e) {
+      console.log(e.target.tagName)
+      console.log('dropdown');
+      console.log(activeDropdown)
+      if (e.target.tagName === 'LI' && activeDropdown) {
+        if (e.target.innerHTML === 'Master Card') {
+          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
+          activeDropdown.classList.remove('visible');
+          activeDropdown = null;
+          e.target.innerHTML = document.getElementById('current-card').innerHTML;
+          document.getElementById('current-card').innerHTML = 'Master Card';
+        }
+        else if (e.target.innerHTML === 'American Express') {
+          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
+          activeDropdown.classList.remove('visible');
+          activeDropdown = null;
+          e.target.innerHTML = document.getElementById('current-card').innerHTML;
+          document.getElementById('current-card').innerHTML = 'American Express';
+        }
+        else if (e.target.innerHTML === 'Visa') {
+          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
+          activeDropdown.classList.remove('visible');
+          activeDropdown = null;
+          e.target.innerHTML = document.getElementById('current-card').innerHTML;
+          document.getElementById('current-card').innerHTML = 'Visa';
+        }
+      }
+      else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+        activeDropdown.classList.remove('visible');
+        activeDropdown = null;
+      }
+    }
+
+    function myFunction() {
+          alert("paid successfully!");
+        }
+  </script>
+</body>
+
+</html>

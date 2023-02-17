@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("slider2.jpg");
+    background-size: cover;
+}
+form{
+    width: 600px;
+    box-shadow: 0 4px 8px 0 black,0 4px 8px 0 black ;
+    color: whitesmoke ;
+    margin:auto;
+    padding :0px 0px 0px 0px;
+    border-radius:15px 15px 0px 0px;
+    
+}
+.h1{
+    text-align: center;
+}
+.box1{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+    background-color: #30475e;
+
+}
+
+.A{
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.box2{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0 15px 0;
+    background-color: #30475e;
+
+
+}
+.viola3{
+    font-size: medium;
+    display: block;
+    margin: 20px 0px 0px 20px ;
+    text-align: center;
+    border-radius: 32px;
+    border: 5px solid #5bc0de;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.25px;
+}
+.viola1{
+    font-size: medium;
+    display: block;
+    margin: initial;
+    text-align: left;
+    border-radius: 25px;
+    padding: 10px 20px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.25px;
+    border: 5px solid #5bc0de;
+    
+}
+
+.viola2{
+    font-size: x-large;
+    font-family: serif;
+    font-style: initial;
+
+}
+@media  screen and(max-width:600px) {
+    body{
+        padding: 20px;
+    }
+    form{
+        width: 555px;
+        margin: 7px auto 0 auto;
+       padding: 20px;
+       box-shadow: 0 4px 8px 0 black, 0 4px 8px 0 black;
+       color: rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+    .A{
+        display:block;
+    }
+    .box2{
+        width: 100px;
+        box-sizing: border-box;
+    }
+    
+}
+
+  .closeviola3 {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closeviola3:hover {
+    color: black;
+  }
+  input[type="text"] {
+    height: 40px;
+}
